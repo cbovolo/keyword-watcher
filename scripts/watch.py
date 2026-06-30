@@ -111,7 +111,7 @@ def require_env(name: str) -> str:
 
 
 def send_whatsapp(message: str) -> Tuple[bool, str]:
-    api_version = os.getenv("WHATSAPP_API_VERSION", "v23.0").strip().lstrip("/")
+    api_version = (os.getenv("WHATSAPP_API_VERSION") or "v23.0").strip().lstrip("/")
     phone_number_id = require_env("WHATSAPP_PHONE_NUMBER_ID")
     token = require_env("WHATSAPP_ACCESS_TOKEN")
     recipient = require_env("WHATSAPP_TO").replace("+", "").replace(" ", "").replace("-", "")

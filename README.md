@@ -35,7 +35,6 @@ Go to repo Settings -> Secrets and variables -> Actions -> New repository secret
 Add these secrets:
 
 ```text
-WHATSAPP_API_VERSION
 WHATSAPP_ACCESS_TOKEN
 WHATSAPP_PHONE_NUMBER_ID
 WHATSAPP_TO
@@ -44,9 +43,10 @@ WHATSAPP_TO
 Use:
 
 ```text
-WHATSAPP_API_VERSION=v23.0
 WHATSAPP_TO=3069XXXXXXXX
 ```
+
+`WHATSAPP_API_VERSION` is optional. If omitted, the script uses `v23.0`.
 
 `WHATSAPP_TO` is your recipient phone number in international format. Spaces and `+` are stripped automatically.
 
