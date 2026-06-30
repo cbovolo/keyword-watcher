@@ -2,16 +2,16 @@
 
 This version uses:
 
-- Google Sheets as the place where you add websites and keywords.
+- `monitors.csv` in GitHub as the place where you add websites and keywords.
 - GitHub Actions as the free scheduled runner.
 - WhatsApp Cloud API for notifications.
 - A committed `.watcher-state.json` file so the same unchanged match or fetch failure does not spam you every 5 minutes.
 
 No server. No Vercel. No SSH after setup.
 
-## Sheet Format
+## Add Websites
 
-Create a Google Sheet with this header row:
+Edit `monitors.csv` in GitHub. Keep this header row:
 
 ```text
 enabled,name,url,keywords,case_sensitive
@@ -28,26 +28,13 @@ Use `|` between keywords in the `keywords` cell.
 
 To disable a row, set `enabled` to `no`.
 
-## Publish The Sheet As CSV
-
-In Google Sheets:
-
-1. File -> Share -> Publish to web.
-2. Choose the monitor sheet/tab.
-3. Choose CSV.
-4. Copy the published CSV link.
-
-That link becomes the `MONITORS_CSV_URL` GitHub secret.
-
 ## GitHub Setup
 
-1. Create a new GitHub repo.
-2. Upload this folder's contents to the repo root.
-3. Go to repo Settings -> Secrets and variables -> Actions -> New repository secret.
-4. Add these secrets:
+Go to repo Settings -> Secrets and variables -> Actions -> New repository secret.
+
+Add these secrets:
 
 ```text
-MONITORS_CSV_URL
 WHATSAPP_API_VERSION
 WHATSAPP_ACCESS_TOKEN
 WHATSAPP_PHONE_NUMBER_ID
@@ -71,13 +58,13 @@ After that, GitHub runs it every 5 minutes.
 
 ## Adding Websites Later
 
-Just add a row in the Google Sheet:
+Open `monitors.csv` in GitHub, click edit, add a row, and commit:
 
 ```text
 yes,Shop name,https://shop.example/search?q=pokemon,keyword one|keyword two|keyword three,no
 ```
 
-No redeploy. No server. No code edits.
+No redeploy. No server.
 
 ## Alert Behavior
 

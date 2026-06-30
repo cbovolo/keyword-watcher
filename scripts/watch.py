@@ -12,6 +12,7 @@ from urllib.request import Request, urlopen
 
 
 STATE_FILE = Path(os.getenv("STATE_FILE", ".watcher-state.json"))
+DEFAULT_MONITORS_FILE = Path(os.getenv("MONITORS_CSV_PATH", "monitors.csv"))
 REQUEST_TIMEOUT_SECONDS = int(os.getenv("REQUEST_TIMEOUT_SECONDS", "25"))
 USER_AGENT = os.getenv(
     "WATCHER_USER_AGENT",
@@ -160,9 +161,11 @@ def message_for(monitor: Dict, status: str, matches: List[str] = None, error: st
 
 def download_monitors_csv() -> str:
     local_path = os.getenv("MONITORS_CSV_PATH", "").strip()
-    if local_path:
-        return Path(local_path).read_text(encoding="utf-8")
-    csv_url = require_env("MONITORS_CSV_URL")
+    if local_path or DEFAULT_MONITORS_FILE.exists():
+        return Path(local_path or DEFAULT_MONITORS_FILE).read_text(encoding="utf-8")
+    csv_url = os.getenv("MONITORS_CSV_URL", "").strip()
+    if not csv_url:
+        raise RuntimeError("No monitors source found. Add monitors.csv or set MONITORS_CSV_URL.")
     return read_text_url(csv_url)
 
 
