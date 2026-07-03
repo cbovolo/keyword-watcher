@@ -4,7 +4,7 @@ This version uses:
 
 - `monitors.csv` in GitHub as the place where you add websites and keywords.
 - GitHub Actions as the free scheduled runner.
-- WhatsApp Cloud API for notifications.
+- ntfy phone push notifications.
 - A committed `.watcher-state.json` file so the same unchanged match or fetch failure does not spam you every 5 minutes.
 
 No server. No Vercel. No SSH after setup.
@@ -30,25 +30,36 @@ To disable a row, set `enabled` to `no`.
 
 ## GitHub Setup
 
+Install the ntfy app on your phone:
+
+- iPhone: https://apps.apple.com/app/ntfy/id1625396347
+- Android: https://play.google.com/store/apps/details?id=io.heckel.ntfy
+
+Subscribe to this topic in the app:
+
+```text
+keyword-watcher-ef43f9800c09930d25563d8c
+```
+
+The topic is intentionally random. Treat it like a password.
+
+## GitHub Setup
+
 Go to repo Settings -> Secrets and variables -> Actions -> New repository secret.
 
 Add these secrets:
 
 ```text
-WHATSAPP_ACCESS_TOKEN
-WHATSAPP_PHONE_NUMBER_ID
-WHATSAPP_TO
+NTFY_TOPIC
 ```
 
 Use:
 
 ```text
-WHATSAPP_TO=3069XXXXXXXX
+NTFY_TOPIC=keyword-watcher-ef43f9800c09930d25563d8c
 ```
 
-`WHATSAPP_API_VERSION` is optional. If omitted, the script uses `v23.0`.
-
-`WHATSAPP_TO` is your recipient phone number in international format. Spaces and `+` are stripped automatically.
+No Meta app, no WhatsApp Business setup, no payment.
 
 ## Run It
 
@@ -68,10 +79,10 @@ No redeploy. No server.
 
 ## Alert Behavior
 
-- Sends WhatsApp when a keyword match first appears.
-- Sends WhatsApp when the set of matched keywords changes.
-- Sends WhatsApp when a fetch fails.
-- Sends WhatsApp when a failed site starts working again.
+- Sends a phone notification when a keyword match first appears.
+- Sends a phone notification when the set of matched keywords changes.
+- Sends a phone notification when a fetch fails.
+- Sends a phone notification when a failed site starts working again.
 - Does not resend the same unchanged match or same unchanged fetch error every run.
 
 ## Limits
@@ -80,4 +91,4 @@ GitHub scheduled workflows can run every 5 minutes, but GitHub may delay schedul
 
 GitHub docs: https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
 
-WhatsApp Cloud API docs: https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages
+ntfy docs: https://docs.ntfy.sh/

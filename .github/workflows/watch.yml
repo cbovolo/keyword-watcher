@@ -28,6 +28,8 @@ jobs:
         run: python scripts/watch.py
         env:
           MONITORS_CSV_URL: ${{ secrets.MONITORS_CSV_URL }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
           WHATSAPP_API_VERSION: ${{ secrets.WHATSAPP_API_VERSION }}
           WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
           WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}

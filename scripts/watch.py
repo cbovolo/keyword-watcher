@@ -143,6 +143,43 @@ def send_whatsapp(message: str) -> Tuple[bool, str]:
         return False, str(exc)
 
 
+def send_ntfy(message: str) -> Tuple[bool, str]:
+    topic = os.getenv("NTFY_TOPIC", "").strip()
+    if not topic:
+        return False, "Missing NTFY_TOPIC"
+    server = (os.getenv("NTFY_SERVER") or "https://ntfy.sh").strip().rstrip("/")
+    url = f"{server}/{quote(topic, safe='-_A-Za-z0-9')}"
+    data = message.encode("utf-8")
+    req = Request(
+        url,
+        data=data,
+        method="POST",
+        headers={
+            "Content-Type": "text/plain; charset=utf-8",
+            "Title": "Keyword watcher",
+            "Priority": "high",
+        },
+    )
+    try:
+        with urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as response:
+            return True, response.read().decode("utf-8", errors="replace")
+    except HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        return False, f"HTTP {exc.code}: {body}"
+    except URLError as exc:
+        return False, str(exc)
+
+
+def send_notification(message: str) -> Tuple[bool, str, str]:
+    if os.getenv("NTFY_TOPIC", "").strip():
+        ok, response = send_ntfy(message)
+        return ok, "ntfy", response
+    if all(os.getenv(name, "").strip() for name in ["WHATSAPP_ACCESS_TOKEN", "WHATSAPP_PHONE_NUMBER_ID", "WHATSAPP_TO"]):
+        ok, response = send_whatsapp(message)
+        return ok, "whatsapp", response
+    raise RuntimeError("No notification channel configured. Set NTFY_TOPIC.")
+
+
 def message_for(monitor: Dict, status: str, matches: List[str] = None, error: str = "") -> str:
     lines = [f"Keyword watcher: {monitor['name']}"]
     if status == "match":
@@ -218,10 +255,10 @@ def check_monitor(monitor: Dict, state: Dict) -> bool:
         )
         changed = True
         if should_notify:
-            ok, response = send_whatsapp(message_for(monitor, "fetch_failed", error=error))
-            print(f"{monitor['name']}: fetch failed, whatsapp_sent={ok}, response={response[:300]}")
+            ok, channel, response = send_notification(message_for(monitor, "fetch_failed", error=error))
+            print(f"{monitor['name']}: fetch failed, {channel}_sent={ok}, response={response[:300]}")
         else:
-            print(f"{monitor['name']}: still failing, no duplicate WhatsApp")
+            print(f"{monitor['name']}: still failing, no duplicate notification")
         return changed
 
     matches = find_matches(content, monitor["keywords"], monitor["case_sensitive"])
@@ -241,10 +278,10 @@ def check_monitor(monitor: Dict, state: Dict) -> bool:
         )
         changed = True
         if should_notify:
-            ok, response = send_whatsapp(message_for(monitor, "match", matches=matches))
-            print(f"{monitor['name']}: matched {matches}, whatsapp_sent={ok}, response={response[:300]}")
+            ok, channel, response = send_notification(message_for(monitor, "match", matches=matches))
+            print(f"{monitor['name']}: matched {matches}, {channel}_sent={ok}, response={response[:300]}")
         else:
-            print(f"{monitor['name']}: same match, no duplicate WhatsApp")
+            print(f"{monitor['name']}: same match, no duplicate notification")
         return changed
 
     recovered = str(previous_alert_state or "").startswith("error:")
@@ -261,18 +298,18 @@ def check_monitor(monitor: Dict, state: Dict) -> bool:
     )
     changed = True
     if recovered:
-        ok, response = send_whatsapp(message_for(monitor, "recovered"))
-        print(f"{monitor['name']}: recovered, whatsapp_sent={ok}, response={response[:300]}")
+        ok, channel, response = send_notification(message_for(monitor, "recovered"))
+        print(f"{monitor['name']}: recovered, {channel}_sent={ok}, response={response[:300]}")
     else:
         print(f"{monitor['name']}: no match")
     return changed
 
 
 def main() -> int:
-    # Fail fast so a misconfigured Action is obvious.
-    require_env("WHATSAPP_ACCESS_TOKEN")
-    require_env("WHATSAPP_PHONE_NUMBER_ID")
-    require_env("WHATSAPP_TO")
+    if not os.getenv("NTFY_TOPIC", "").strip() and not all(
+        os.getenv(name, "").strip() for name in ["WHATSAPP_ACCESS_TOKEN", "WHATSAPP_PHONE_NUMBER_ID", "WHATSAPP_TO"]
+    ):
+        raise RuntimeError("No notification channel configured. Set NTFY_TOPIC.")
 
     monitors = parse_monitors(download_monitors_csv())
     if not monitors:
