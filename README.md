@@ -35,10 +35,10 @@ Install the ntfy app on your phone:
 - iPhone: https://apps.apple.com/app/ntfy/id1625396347
 - Android: https://play.google.com/store/apps/details?id=io.heckel.ntfy
 
-Subscribe to this topic in the app:
+Subscribe to the private topic you configured as the `NTFY_TOPIC` GitHub secret.
 
 ```text
-keyword-watcher-ef43f9800c09930d25563d8c
+your-random-topic
 ```
 
 The topic is intentionally random. Treat it like a password.
@@ -56,7 +56,7 @@ NTFY_TOPIC
 Use:
 
 ```text
-NTFY_TOPIC=keyword-watcher-ef43f9800c09930d25563d8c
+NTFY_TOPIC=your-random-topic
 ```
 
 No Meta app, no WhatsApp Business setup, no payment.
