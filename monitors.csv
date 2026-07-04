@@ -1,2 +1,18 @@
 enabled,name,url,keywords,case_sensitive
 yes,eFantasy Pokemon,https://www.efantasy.gr/el/search-results?αναζήτηση=pokemon&sort=auto_min_price,151|booster box|elite trainer box|surging sparks,no
+yes,epitrapezio Pokemon,https://epitrapez.io/product-category/trading-card-games/pokemon/?orderby=price-desc&Stock=instock%2Conbackorder,30th|anniversary,no
+yes,epitrapezio Pokemon,https://epitrapez.io/?s=30th+anniversary&post_type=product&dgwt_wcas=1,pokemon,no
+yes,pegasus,https://pegasuscollectables.gr/product-category/trading-card-games/pokemon-tcg/?orderby=date&per_page=18,30th|30,no
+yes,pegasus,https://pegasuscollectables.gr/?s=30th+anniversary&post_type=product,elite,no
+yes,bla bla toys,https://www.blablatoys.gr/el/search-results/?search-for=30th+elite+pokemon,box|bundle,no
+yes,gamescom,https://www.gamescom.gr/?match=all&subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&q=30th+anniversary&dispatch=products.search&security_hash=ee7c50fc475b2e1851ae73b1e6845258,pokemon|elite,no
+yes,gamescape,https://gamescape.gr/en/?s=30th+anniversary&post_type=product&dgwt_wcas=1,pokemon|elite,no
+yes,candypop,https://www.candypop.gr/search?q=pokemon+30th&options%5Bprefix%5D=last,pokemon|elite,no
+yes,cardsihve,https://www.cardshive.gr/index.php?route=product/search&search=30th%20pokemon,elite,no
+yes,toysshop,https://www.toys-shop.gr/el/m/iqitsearch/searchiqit?s=30th+pokemon,elite,no
+yes,gameon,https://gameongreece.gr/?s=pokemon+elite+trainer&post_type=product,30th|30,no
+yes,etoy,https://etoy.gr/content/79-search-results?search_query=anniversary+pokemon,30th|elite|30,no
+yes,astron,https://www.astrongameclub.gr/?product_cat=&s=30+pokemon&post_type=product,30th|elite|30,no
+yes,funbox,https://www.funbox.gr/?section=1939&query1942=30th+pokemon&language=el_GR,elite,no
+yes,toys24,https://www.toys24.gr/?s=pokemon+anniversary&post_type=product&dgwt_wcas=1,elite|30th|30,no
+yes,unboxern,https://theunboxern.gr/product-category/pokemon/pokemon_etb/,30|30th,no
