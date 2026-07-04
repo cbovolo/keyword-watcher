@@ -1,8 +1,151 @@
 {
   "monitors": {
+    "01c0f919d104a2478781": {
+      "alert_state": "no_match",
+      "last_checked_at": "2026-07-04T20:07:35+00:00",
+      "last_error": "",
+      "last_matches": [],
+      "last_status": "no_match",
+      "name": "epitrapezio Pokemon",
+      "url": "https://epitrapez.io/product-category/trading-card-games/pokemon/?orderby=price-desc&Stock=instock%2Conbackorder"
+    },
+    "071d4a17e73f54567aa4": {
+      "alert_state": "error:HTTP Error 403: Forbidden",
+      "last_checked_at": "2026-07-04T20:07:37+00:00",
+      "last_error": "HTTP Error 403: Forbidden",
+      "last_status": "error",
+      "name": "pegasus",
+      "url": "https://pegasuscollectables.gr/?s=30th+anniversary&post_type=product"
+    },
+    "0e09f49f459a954d02a7": {
+      "alert_state": "no_match",
+      "last_checked_at": "2026-07-04T20:07:42+00:00",
+      "last_error": "",
+      "last_matches": [],
+      "last_status": "no_match",
+      "name": "cardsihve",
+      "url": "https://www.cardshive.gr/index.php?route=product/search&search=30th%20pokemon"
+    },
+    "1398f66a992dd149e7ea": {
+      "alert_state": "match:[\"30\"]",
+      "last_checked_at": "2026-07-04T20:07:46+00:00",
+      "last_error": "",
+      "last_matches": [
+        "30"
+      ],
+      "last_status": "matched",
+      "name": "gameon",
+      "url": "https://gameongreece.gr/?s=pokemon+elite+trainer&post_type=product"
+    },
+    "325e82229cc7e4ec5f59": {
+      "alert_state": "match:[\"pokemon\"]",
+      "last_checked_at": "2026-07-04T20:07:36+00:00",
+      "last_error": "",
+      "last_matches": [
+        "pokemon"
+      ],
+      "last_status": "matched",
+      "name": "epitrapezio Pokemon",
+      "url": "https://epitrapez.io/?s=30th+anniversary&post_type=product&dgwt_wcas=1"
+    },
+    "6e4627deec30ed5309de": {
+      "alert_state": "match:[\"30\"]",
+      "last_checked_at": "2026-07-04T20:07:55+00:00",
+      "last_error": "",
+      "last_matches": [
+        "30"
+      ],
+      "last_status": "matched",
+      "name": "unboxern",
+      "url": "https://theunboxern.gr/product-category/pokemon/pokemon_etb/"
+    },
+    "7ae00e28da9e370f6f55": {
+      "alert_state": "match:[\"pokemon\", \"elite\"]",
+      "last_checked_at": "2026-07-04T20:07:40+00:00",
+      "last_error": "",
+      "last_matches": [
+        "pokemon",
+        "elite"
+      ],
+      "last_status": "matched",
+      "name": "candypop",
+      "url": "https://www.candypop.gr/search?q=pokemon+30th&options%5Bprefix%5D=last"
+    },
+    "9e9d79282861cfde6208": {
+      "alert_state": "error:HTTP Error 403: Forbidden",
+      "last_checked_at": "2026-07-04T20:07:37+00:00",
+      "last_error": "HTTP Error 403: Forbidden",
+      "last_status": "error",
+      "name": "bla bla toys",
+      "url": "https://www.blablatoys.gr/el/search-results/?search-for=30th+elite+pokemon"
+    },
+    "a9d671d8487fdaa537c8": {
+      "alert_state": "match:[\"pokemon\"]",
+      "last_checked_at": "2026-07-04T20:07:39+00:00",
+      "last_error": "",
+      "last_matches": [
+        "pokemon"
+      ],
+      "last_status": "matched",
+      "name": "gamescape",
+      "url": "https://gamescape.gr/en/?s=30th+anniversary&post_type=product&dgwt_wcas=1"
+    },
+    "ab8446a4f297ddfe7aef": {
+      "alert_state": "error:HTTP Error 403: Forbidden",
+      "last_checked_at": "2026-07-04T20:07:37+00:00",
+      "last_error": "HTTP Error 403: Forbidden",
+      "last_status": "error",
+      "name": "pegasus",
+      "url": "https://pegasuscollectables.gr/product-category/trading-card-games/pokemon-tcg/?orderby=date&per_page=18"
+    },
+    "c38bed545eeb296d6d11": {
+      "alert_state": "no_match",
+      "last_checked_at": "2026-07-04T20:07:52+00:00",
+      "last_error": "",
+      "last_matches": [],
+      "last_status": "no_match",
+      "name": "funbox",
+      "url": "https://www.funbox.gr/?section=1939&query1942=30th+pokemon&language=el_GR"
+    },
+    "c4c4db93115378129821": {
+      "alert_state": "error:HTTP Error 520: <none>",
+      "last_checked_at": "2026-07-04T20:07:52+00:00",
+      "last_error": "HTTP Error 520: <none>",
+      "last_status": "error",
+      "name": "toys24",
+      "url": "https://www.toys24.gr/?s=pokemon+anniversary&post_type=product&dgwt_wcas=1"
+    },
+    "d389a8364763df0d4f45": {
+      "alert_state": "match:[\"30\"]",
+      "last_checked_at": "2026-07-04T20:07:51+00:00",
+      "last_error": "",
+      "last_matches": [
+        "30"
+      ],
+      "last_status": "matched",
+      "name": "astron",
+      "url": "https://www.astrongameclub.gr/?product_cat=&s=30+pokemon&post_type=product"
+    },
+    "e0abaa5c4e96fdfa91db": {
+      "alert_state": "error:HTTP Error 403: Forbidden",
+      "last_checked_at": "2026-07-04T20:07:37+00:00",
+      "last_error": "HTTP Error 403: Forbidden",
+      "last_status": "error",
+      "name": "gamescom",
+      "url": "https://www.gamescom.gr/?match=all&subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&q=30th+anniversary&dispatch=products.search&security_hash=ee7c50fc475b2e1851ae73b1e6845258"
+    },
+    "e7e4444899fc6ef30c6e": {
+      "alert_state": "no_match",
+      "last_checked_at": "2026-07-04T20:07:42+00:00",
+      "last_error": "",
+      "last_matches": [],
+      "last_status": "no_match",
+      "name": "toysshop",
+      "url": "https://www.toys-shop.gr/el/m/iqitsearch/searchiqit?s=30th+pokemon"
+    },
     "f97b9b87669b92f126c9": {
       "alert_state": "match:[\"151\"]",
-      "last_checked_at": "2026-07-04T19:39:15+00:00",
+      "last_checked_at": "2026-07-04T20:07:34+00:00",
       "last_error": "",
       "last_matches": [
         "151"
@@ -10,6 +153,15 @@
       "last_status": "matched",
       "name": "eFantasy Pokemon",
       "url": "https://www.efantasy.gr/el/search-results?αναζήτηση=pokemon&sort=auto_min_price"
+    },
+    "fce1bb0f6f7e935ef84f": {
+      "alert_state": "no_match",
+      "last_checked_at": "2026-07-04T20:07:47+00:00",
+      "last_error": "",
+      "last_matches": [],
+      "last_status": "no_match",
+      "name": "etoy",
+      "url": "https://etoy.gr/content/79-search-results?search_query=anniversary+pokemon"
     }
   }
 }
