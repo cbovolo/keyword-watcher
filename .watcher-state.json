@@ -2,7 +2,7 @@
   "monitors": {
     "01c0f919d104a2478781": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:49:55+00:00",
+      "last_checked_at": "2026-08-20T00:01:40+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -11,7 +11,7 @@
     },
     "071d4a17e73f54567aa4": {
       "alert_state": "match:[\"elite\"]",
-      "last_checked_at": "2026-08-19T23:50:01+00:00",
+      "last_checked_at": "2026-08-20T00:01:47+00:00",
       "last_error": "",
       "last_matches": [
         "elite"
@@ -22,7 +22,7 @@
     },
     "0e09f49f459a954d02a7": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:50:06+00:00",
+      "last_checked_at": "2026-08-20T00:01:53+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -42,7 +42,7 @@
     },
     "325e82229cc7e4ec5f59": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-08-19T23:49:58+00:00",
+      "last_checked_at": "2026-08-20T00:01:43+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -53,7 +53,7 @@
     },
     "6e4627deec30ed5309de": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-19T23:50:19+00:00",
+      "last_checked_at": "2026-08-20T00:02:06+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -64,7 +64,7 @@
     },
     "7991bab575631d5fe338": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:50:10+00:00",
+      "last_checked_at": "2026-08-20T00:01:57+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -73,7 +73,7 @@
     },
     "7ae00e28da9e370f6f55": {
       "alert_state": "match:[\"pokemon\", \"elite\"]",
-      "last_checked_at": "2026-08-19T23:50:05+00:00",
+      "last_checked_at": "2026-08-20T00:01:51+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon",
@@ -85,7 +85,7 @@
     },
     "9e9d79282861cfde6208": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-08-19T23:50:01+00:00",
+      "last_checked_at": "2026-08-20T00:01:47+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "bla bla toys",
@@ -93,7 +93,7 @@
     },
     "a9d671d8487fdaa537c8": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-08-19T23:50:04+00:00",
+      "last_checked_at": "2026-08-20T00:01:50+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -104,7 +104,7 @@
     },
     "ab8446a4f297ddfe7aef": {
       "alert_state": "match:[\"30th\", \"30\"]",
-      "last_checked_at": "2026-08-19T23:49:58+00:00",
+      "last_checked_at": "2026-08-20T00:01:44+00:00",
       "last_error": "",
       "last_matches": [
         "30th",
@@ -116,7 +116,7 @@
     },
     "c38bed545eeb296d6d11": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:50:15+00:00",
+      "last_checked_at": "2026-08-20T00:02:03+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -125,7 +125,7 @@
     },
     "c4c4db93115378129821": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:50:16+00:00",
+      "last_checked_at": "2026-08-20T00:02:04+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -134,7 +134,7 @@
     },
     "d389a8364763df0d4f45": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-19T23:50:15+00:00",
+      "last_checked_at": "2026-08-20T00:02:02+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -145,7 +145,7 @@
     },
     "e0abaa5c4e96fdfa91db": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-08-19T23:50:02+00:00",
+      "last_checked_at": "2026-08-20T00:01:48+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "gamescom",
@@ -153,7 +153,7 @@
     },
     "e7e4444899fc6ef30c6e": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:50:07+00:00",
+      "last_checked_at": "2026-08-20T00:01:53+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -162,7 +162,7 @@
     },
     "f97b9b87669b92f126c9": {
       "alert_state": "match:[\"151\"]",
-      "last_checked_at": "2026-08-19T23:49:54+00:00",
+      "last_checked_at": "2026-08-20T00:01:39+00:00",
       "last_error": "",
       "last_matches": [
         "151"
@@ -173,7 +173,7 @@
     },
     "fce1bb0f6f7e935ef84f": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-19T23:50:11+00:00",
+      "last_checked_at": "2026-08-20T00:01:58+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
