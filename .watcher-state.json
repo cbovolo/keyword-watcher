@@ -2,7 +2,7 @@
   "monitors": {
     "01c0f919d104a2478781": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-21T20:36:19+00:00",
+      "last_checked_at": "2026-08-21T20:54:32+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -11,7 +11,7 @@
     },
     "071d4a17e73f54567aa4": {
       "alert_state": "match:[\"elite\"]",
-      "last_checked_at": "2026-08-21T20:36:26+00:00",
+      "last_checked_at": "2026-08-21T20:54:38+00:00",
       "last_error": "",
       "last_matches": [
         "elite"
@@ -22,7 +22,7 @@
     },
     "0e09f49f459a954d02a7": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-21T20:36:31+00:00",
+      "last_checked_at": "2026-08-21T20:54:44+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -42,7 +42,7 @@
     },
     "325e82229cc7e4ec5f59": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-08-21T20:36:23+00:00",
+      "last_checked_at": "2026-08-21T20:54:35+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -53,7 +53,7 @@
     },
     "6e4627deec30ed5309de": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-21T20:36:48+00:00",
+      "last_checked_at": "2026-08-21T20:55:00+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -64,7 +64,7 @@
     },
     "7991bab575631d5fe338": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-21T20:36:38+00:00",
+      "last_checked_at": "2026-08-21T20:54:50+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -73,7 +73,7 @@
     },
     "7ae00e28da9e370f6f55": {
       "alert_state": "match:[\"pokemon\", \"elite\"]",
-      "last_checked_at": "2026-08-21T20:36:29+00:00",
+      "last_checked_at": "2026-08-21T20:54:42+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon",
@@ -85,7 +85,7 @@
     },
     "9e9d79282861cfde6208": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-08-21T20:36:26+00:00",
+      "last_checked_at": "2026-08-21T20:54:38+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "bla bla toys",
@@ -93,7 +93,7 @@
     },
     "a9d671d8487fdaa537c8": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-08-21T20:36:28+00:00",
+      "last_checked_at": "2026-08-21T20:54:41+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -104,7 +104,7 @@
     },
     "ab8446a4f297ddfe7aef": {
       "alert_state": "match:[\"30th\", \"30\"]",
-      "last_checked_at": "2026-08-21T20:36:24+00:00",
+      "last_checked_at": "2026-08-21T20:54:36+00:00",
       "last_error": "",
       "last_matches": [
         "30th",
@@ -116,7 +116,7 @@
     },
     "c38bed545eeb296d6d11": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-21T20:36:43+00:00",
+      "last_checked_at": "2026-08-21T20:54:55+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -124,19 +124,17 @@
       "url": "https://www.funbox.gr/?section=1939&query1942=30th+pokemon&language=el_GR"
     },
     "c4c4db93115378129821": {
-      "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-21T20:36:44+00:00",
+      "alert_state": "no_match",
+      "last_checked_at": "2026-08-21T20:54:56+00:00",
       "last_error": "",
-      "last_matches": [
-        "30"
-      ],
-      "last_status": "matched",
+      "last_matches": [],
+      "last_status": "no_match",
       "name": "toys24",
       "url": "https://www.toys24.gr/?s=pokemon+anniversary&post_type=product&dgwt_wcas=1"
     },
     "d389a8364763df0d4f45": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-21T20:36:43+00:00",
+      "last_checked_at": "2026-08-21T20:54:54+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -147,7 +145,7 @@
     },
     "e0abaa5c4e96fdfa91db": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-08-21T20:36:26+00:00",
+      "last_checked_at": "2026-08-21T20:54:39+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "gamescom",
@@ -155,7 +153,7 @@
     },
     "e7e4444899fc6ef30c6e": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-21T20:36:32+00:00",
+      "last_checked_at": "2026-08-21T20:54:45+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -164,7 +162,7 @@
     },
     "f97b9b87669b92f126c9": {
       "alert_state": "match:[\"151\"]",
-      "last_checked_at": "2026-08-21T20:36:16+00:00",
+      "last_checked_at": "2026-08-21T20:54:31+00:00",
       "last_error": "",
       "last_matches": [
         "151"
@@ -175,7 +173,7 @@
     },
     "fce1bb0f6f7e935ef84f": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-21T20:36:39+00:00",
+      "last_checked_at": "2026-08-21T20:54:51+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
