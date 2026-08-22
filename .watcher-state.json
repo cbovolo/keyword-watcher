@@ -2,7 +2,7 @@
   "monitors": {
     "01c0f919d104a2478781": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-22T08:47:08+00:00",
+      "last_checked_at": "2026-08-22T09:06:05+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -10,19 +10,19 @@
       "url": "https://epitrapez.io/product-category/trading-card-games/pokemon/?orderby=price-desc&Stock=instock%2Conbackorder"
     },
     "071d4a17e73f54567aa4": {
-      "alert_state": "error:<urlopen error timed out>",
-      "last_checked_at": "2026-08-22T08:48:01+00:00",
-      "last_error": "<urlopen error timed out>",
+      "alert_state": "match:[\"elite\"]",
+      "last_checked_at": "2026-08-22T09:06:11+00:00",
+      "last_error": "",
       "last_matches": [
         "elite"
       ],
-      "last_status": "error",
+      "last_status": "matched",
       "name": "pegasus",
       "url": "https://pegasuscollectables.gr/?s=30th+anniversary&post_type=product"
     },
     "0e09f49f459a954d02a7": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-22T08:48:10+00:00",
+      "last_checked_at": "2026-08-22T09:06:18+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -42,7 +42,7 @@
     },
     "325e82229cc7e4ec5f59": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-08-22T08:47:11+00:00",
+      "last_checked_at": "2026-08-22T09:06:07+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -53,7 +53,7 @@
     },
     "6e4627deec30ed5309de": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-22T08:48:41+00:00",
+      "last_checked_at": "2026-08-22T09:06:40+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -63,17 +63,17 @@
       "url": "https://theunboxern.gr/product-category/pokemon/pokemon_etb/"
     },
     "7991bab575631d5fe338": {
-      "alert_state": "error:HTTP Error 507: Insufficient Storage",
-      "last_checked_at": "2026-08-22T08:48:11+00:00",
-      "last_error": "HTTP Error 507: Insufficient Storage",
+      "alert_state": "no_match",
+      "last_checked_at": "2026-08-22T09:06:30+00:00",
+      "last_error": "",
       "last_matches": [],
-      "last_status": "error",
+      "last_status": "no_match",
       "name": "gameon",
       "url": "https://gameongreece.gr/?s=pokemon+elite+trainer&post_type=product"
     },
     "7ae00e28da9e370f6f55": {
       "alert_state": "match:[\"pokemon\", \"elite\"]",
-      "last_checked_at": "2026-08-22T08:48:08+00:00",
+      "last_checked_at": "2026-08-22T09:06:15+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon",
@@ -85,7 +85,7 @@
     },
     "9e9d79282861cfde6208": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-08-22T08:48:01+00:00",
+      "last_checked_at": "2026-08-22T09:06:11+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "bla bla toys",
@@ -93,7 +93,7 @@
     },
     "a9d671d8487fdaa537c8": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-08-22T08:48:07+00:00",
+      "last_checked_at": "2026-08-22T09:06:14+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -103,20 +103,20 @@
       "url": "https://gamescape.gr/en/?s=30th+anniversary&post_type=product&dgwt_wcas=1"
     },
     "ab8446a4f297ddfe7aef": {
-      "alert_state": "error:<urlopen error timed out>",
-      "last_checked_at": "2026-08-22T08:47:36+00:00",
-      "last_error": "<urlopen error timed out>",
+      "alert_state": "match:[\"30th\", \"30\"]",
+      "last_checked_at": "2026-08-22T09:06:08+00:00",
+      "last_error": "",
       "last_matches": [
         "30th",
         "30"
       ],
-      "last_status": "error",
+      "last_status": "matched",
       "name": "pegasus",
       "url": "https://pegasuscollectables.gr/product-category/trading-card-games/pokemon-tcg/?orderby=date&per_page=18"
     },
     "c38bed545eeb296d6d11": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-22T08:48:36+00:00",
+      "last_checked_at": "2026-08-22T09:06:35+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -125,7 +125,7 @@
     },
     "c4c4db93115378129821": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-22T08:48:37+00:00",
+      "last_checked_at": "2026-08-22T09:06:36+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -136,7 +136,7 @@
     },
     "d389a8364763df0d4f45": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-08-22T08:48:35+00:00",
+      "last_checked_at": "2026-08-22T09:06:34+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -147,7 +147,7 @@
     },
     "e0abaa5c4e96fdfa91db": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-08-22T08:48:01+00:00",
+      "last_checked_at": "2026-08-22T09:06:12+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "gamescom",
@@ -155,7 +155,7 @@
     },
     "e7e4444899fc6ef30c6e": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-22T08:48:11+00:00",
+      "last_checked_at": "2026-08-22T09:06:18+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -164,7 +164,7 @@
     },
     "f97b9b87669b92f126c9": {
       "alert_state": "match:[\"151\"]",
-      "last_checked_at": "2026-08-22T08:47:07+00:00",
+      "last_checked_at": "2026-08-22T09:06:04+00:00",
       "last_error": "",
       "last_matches": [
         "151"
@@ -175,7 +175,7 @@
     },
     "fce1bb0f6f7e935ef84f": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-08-22T08:48:32+00:00",
+      "last_checked_at": "2026-08-22T09:06:31+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
