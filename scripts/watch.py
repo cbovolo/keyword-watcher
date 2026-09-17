@@ -59,6 +59,24 @@ def read_text_url(url: str) -> str:
     return body.decode(charset, errors="replace")
 
 
+def public_gr_sku(url: str) -> str:
+    parts = urlsplit(url.strip())
+    segments = [segment for segment in parts.path.split("/") if segment]
+    if parts.netloc.casefold() in {"public.gr", "www.public.gr"} and segments[:1] == ["product"] and segments[-1].isdigit():
+        return segments[-1]
+    return ""
+
+
+def read_monitor_content(url: str) -> str:
+    # public.gr product pages are rendered by JavaScript, so the stock label
+    # (e.g. "Άμεσα Διαθέσιμο" or "Εξαντλήθηκε") only exists in its product API.
+    sku = public_gr_sku(url)
+    if not sku:
+        return read_text_url(url)
+    data = json.loads(read_text_url(f"https://www.public.gr/public/v2/sku/{sku}?locale=el"))
+    return str((data.get("sku") or {}).get("availability") or "")
+
+
 def load_state() -> Dict:
     if not STATE_FILE.exists():
         return {"monitors": {}}
@@ -238,7 +256,7 @@ def check_monitor(monitor: Dict, state: Dict) -> bool:
     changed = False
 
     try:
-        content = read_text_url(monitor["url"])
+        content = read_monitor_content(monitor["url"])
     except Exception as exc:
         error = str(exc)
         alert_state = f"error:{error[:500]}"

@@ -28,6 +28,8 @@ Use `|` between keywords in the `keywords` cell.
 
 To disable a row, set `enabled` to `no`.
 
+public.gr product pages are built by JavaScript, so for a `public.gr/product/...` URL the watcher only checks the product's stock label (e.g. `Άμεσα Διαθέσιμο`, `Εξαντλήθηκε`) instead of the page HTML.
+
 ## GitHub Setup
 
 Install the ntfy app on your phone:
