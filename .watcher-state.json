@@ -2,7 +2,7 @@
   "monitors": {
     "01c0f919d104a2478781": {
       "alert_state": "match:[\"30th\"]",
-      "last_checked_at": "2026-09-17T12:28:18+00:00",
+      "last_checked_at": "2026-09-17T12:30:40+00:00",
       "last_error": "",
       "last_matches": [
         "30th"
@@ -13,7 +13,7 @@
     },
     "071d4a17e73f54567aa4": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-09-17T12:28:21+00:00",
+      "last_checked_at": "2026-09-17T12:30:43+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_matches": [
         "elite"
@@ -23,11 +23,11 @@
       "url": "https://pegasuscollectables.gr/?s=30th+anniversary&post_type=product"
     },
     "0e09f49f459a954d02a7": {
-      "alert_state": "no_match",
-      "last_checked_at": "2026-09-17T12:28:27+00:00",
-      "last_error": "",
+      "alert_state": "error:<urlopen error timed out>",
+      "last_checked_at": "2026-09-17T12:31:13+00:00",
+      "last_error": "<urlopen error timed out>",
       "last_matches": [],
-      "last_status": "no_match",
+      "last_status": "error",
       "name": "cardsihve",
       "url": "https://www.cardshive.gr/index.php?route=product/search&search=30th%20pokemon"
     },
@@ -44,7 +44,7 @@
     },
     "325e82229cc7e4ec5f59": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-09-17T12:28:21+00:00",
+      "last_checked_at": "2026-09-17T12:30:43+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -55,7 +55,7 @@
     },
     "6e4627deec30ed5309de": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-09-17T12:28:35+00:00",
+      "last_checked_at": "2026-09-17T12:31:22+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -77,7 +77,7 @@
     },
     "7ae00e28da9e370f6f55": {
       "alert_state": "match:[\"pokemon\", \"elite\"]",
-      "last_checked_at": "2026-09-17T12:28:25+00:00",
+      "last_checked_at": "2026-09-17T12:30:47+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon",
@@ -89,7 +89,7 @@
     },
     "9e9d79282861cfde6208": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-09-17T12:28:21+00:00",
+      "last_checked_at": "2026-09-17T12:30:43+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "bla bla toys",
@@ -97,7 +97,7 @@
     },
     "a9d671d8487fdaa537c8": {
       "alert_state": "match:[\"pokemon\"]",
-      "last_checked_at": "2026-09-17T12:28:24+00:00",
+      "last_checked_at": "2026-09-17T12:30:46+00:00",
       "last_error": "",
       "last_matches": [
         "pokemon"
@@ -108,7 +108,7 @@
     },
     "ab8446a4f297ddfe7aef": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-09-17T12:28:21+00:00",
+      "last_checked_at": "2026-09-17T12:30:43+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_matches": [
         "30th",
@@ -120,7 +120,7 @@
     },
     "c38bed545eeb296d6d11": {
       "alert_state": "match:[\"elite\"]",
-      "last_checked_at": "2026-09-17T12:28:31+00:00",
+      "last_checked_at": "2026-09-17T12:31:18+00:00",
       "last_error": "",
       "last_matches": [
         "elite"
@@ -140,7 +140,7 @@
     },
     "d389a8364763df0d4f45": {
       "alert_state": "match:[\"30\"]",
-      "last_checked_at": "2026-09-17T12:28:31+00:00",
+      "last_checked_at": "2026-09-17T12:31:17+00:00",
       "last_error": "",
       "last_matches": [
         "30"
@@ -151,7 +151,7 @@
     },
     "e0abaa5c4e96fdfa91db": {
       "alert_state": "error:HTTP Error 403: Forbidden",
-      "last_checked_at": "2026-09-17T12:28:22+00:00",
+      "last_checked_at": "2026-09-17T12:30:44+00:00",
       "last_error": "HTTP Error 403: Forbidden",
       "last_status": "error",
       "name": "gamescom",
@@ -159,7 +159,7 @@
     },
     "e7e4444899fc6ef30c6e": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-09-17T12:28:27+00:00",
+      "last_checked_at": "2026-09-17T12:31:14+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -168,7 +168,7 @@
     },
     "ec5fe6797f8be7eee18b": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-09-17T12:28:35+00:00",
+      "last_checked_at": "2026-09-17T12:31:22+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
@@ -177,7 +177,7 @@
     },
     "f97b9b87669b92f126c9": {
       "alert_state": "match:[\"151\"]",
-      "last_checked_at": "2026-09-17T12:28:17+00:00",
+      "last_checked_at": "2026-09-17T12:30:38+00:00",
       "last_error": "",
       "last_matches": [
         "151"
@@ -188,7 +188,7 @@
     },
     "fce1bb0f6f7e935ef84f": {
       "alert_state": "no_match",
-      "last_checked_at": "2026-09-17T12:28:28+00:00",
+      "last_checked_at": "2026-09-17T12:31:15+00:00",
       "last_error": "",
       "last_matches": [],
       "last_status": "no_match",
