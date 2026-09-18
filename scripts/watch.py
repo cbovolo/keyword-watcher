@@ -68,13 +68,17 @@ def public_gr_sku(url: str) -> str:
 
 
 def read_monitor_content(url: str) -> str:
-    # public.gr product pages are rendered by JavaScript, so the stock label
-    # (e.g. "Άμεσα Διαθέσιμο" or "Εξαντλήθηκε") only exists in its product API.
+    # public.gr product pages are rendered by JavaScript. The page only shows its
+    # stock label and "Επιλογές παράδοσης" when the productPage API returns a
+    # deliveryRule with allowPurchases; /v2/sku's "availability" is unreliable.
     sku = public_gr_sku(url)
     if not sku:
         return read_text_url(url)
-    data = json.loads(read_text_url(f"https://www.public.gr/public/v2/sku/{sku}?locale=el"))
-    return str((data.get("sku") or {}).get("availability") or "")
+    data = json.loads(read_text_url(f"https://www.public.gr/public/v1/mm/productPage?sku={sku}&locale=el"))
+    rule = (data.get("stockRule") or {}).get("deliveryRule") or {}
+    if not rule.get("allowPurchases"):
+        return ""
+    return "\n".join([rule.get("pdpDisplayText") or rule.get("displayText") or "", "Επιλογές παράδοσης"])
 
 
 def load_state() -> Dict:

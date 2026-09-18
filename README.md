@@ -28,7 +28,7 @@ Use `|` between keywords in the `keywords` cell.
 
 To disable a row, set `enabled` to `no`.
 
-public.gr product pages are built by JavaScript, so for a `public.gr/product/...` URL the watcher only checks the product's stock label (e.g. `Άμεσα Διαθέσιμο`, `Εξαντλήθηκε`) instead of the page HTML.
+public.gr product pages are built by JavaScript, so for a `public.gr/product/...` URL the watcher checks the product's buy box instead of the page HTML. When the product can be bought it sees the stock label (e.g. `Άμεσα Διαθέσιμο`) plus `Επιλογές παράδοσης`, like the page shows; otherwise it sees nothing.
 
 ## GitHub Setup
 
